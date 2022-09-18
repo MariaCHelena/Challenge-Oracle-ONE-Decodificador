@@ -1,0 +1,256 @@
+/*Configurações gerais*/
+
+@font-face {
+    font-family: 'PressStart2P';
+    src: url(PressStart2P-Regular.ttf);
+}
+
+:root{
+    --contentColor: #43523D;
+    --backgroundColor: #C7F0D8;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+body{
+    font-family: 'PressStart2P';
+    background-color: var(--backgroundColor);
+    color: var(--contentColor);
+}
+
+/*Fundo do site*/
+
+main{
+    height: 100vh;
+    background-color: var(--contentColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Classes para separar os conteúdos e aplicar o flexbox*/
+
+.conteudoInterno{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundColor);
+    height: 90%;
+    width: 90%;
+
+    border: 10px solid transparent;
+    border-image: url(img/borderBackgroundColorTextArea.png) 34% round;
+}
+
+.embrulhoDosTextos{ 
+    flex-grow: 1; /*Garante que as duas caixinhas preencham até o final do container*/
+    display: flex; /*Faz com que as caixinhas fiquem uma do lado da outra*/
+}
+
+/*Título do Site*/
+
+.titulo{
+    margin-top: 35px;
+    font-size: 36px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.entrada{
+    margin-left: 35px;
+    margin-bottom: 35px;
+
+    display: flex; /*Existem dois filhos desse flexbox, a caixa de texto e os botões com o aviso*/
+    flex-direction: column;
+
+    flex-basis: 65%;
+}
+
+/*Classe geral para criar os fundos verde escuro*/
+
+.fundo {
+    background-color: var(--contentColor);
+    display: flex;
+    border: 10px solid transparent;
+    border-image: url(img/borderContentColorTextArea.png) 34% round;
+}
+
+/*Caixa de texto de entrada*/
+
+.textEntrada {
+    resize: none;
+    border: 10px solid transparent;
+    border-image: url(img/bordercontentcolor.png) 34% round;
+    background-color: var(--contentColor);
+    font-size: 20px;
+    font-family: inherit;
+    color: var(--backgroundColor);
+    caret-color: var(--backgroundColor);
+    flex: 1;
+}
+
+.textEntrada::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.textEntrada::-webkit-scrollbar-track {
+    background: none; 
+}
+   
+.textEntrada::-webkit-scrollbar-thumb {
+    background: var(--backgroundColor);
+    border: 4px solid transparent;
+    border-image: url(img/borderBackgroundColorTextArea.png) 34% round;
+}
+  
+.textEntrada::-webkit-scrollbar-thumb:hover {
+    background: var(--backgroundColor); 
+    cursor: pointer;
+}
+
+.areaDoTextoEntrada{
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+/*Código dos elementos abaixo da caixa de texto*/
+
+/*Nessa seção o botão que aparece é o botão claro, por isso vou colocá-lo aqui também*/
+
+
+.botaoClaro {
+    font-family: inherit;
+    color: var(--contentColor);
+    font-size: 20px;
+    font-weight: 400;
+    border: 10px solid transparent;
+    padding: 10px;
+    border-image: url(img/borderbackgroundcolor.png) 34% round;
+    background-color: var(--backgroundColor);
+}
+
+.aviso{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.iPequeno{
+    background-color: var(--contentColor);
+    color: var(--backgroundColor);
+    border: 4px solid transparent;
+    border-image: url(img/borderContentColorTextArea.png) 34% round;
+    font-size: 8px;
+    margin-right: 5px;
+}
+
+.divbut{
+    margin-top: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+.botoes{
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.encriptar{
+    margin-right: 10px;
+}
+
+/*Seção de resultado*/
+
+.resultado{
+    margin-right: 35px;
+    margin-bottom: 35px;
+
+    flex-basis: 35%;
+}
+
+/*Quando nenhum texto foi digitado ainda*/
+
+.desativado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.desenho{
+    width: 350px;
+}
+
+.textoEstatico{
+    color: var(--backgroundColor);
+    text-align: center;
+}
+
+.desativado h4{
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*Quanto um dos botões é ativado*/
+/*Aqui também foi aplicada a classe "fundo"*/
+
+.ativado{
+    border: 10px solid transparent;
+    border-image: url(img/borderBackgroundColorTextArea.png) 34% round;
+    background-color: var(--backgroundColor);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textSaida{
+    resize: none;
+    border: none;
+    background-color: #C7F0D8;
+    font-size: 20px;
+    font-family: inherit;
+    color: var(--contentColor);
+    caret-color: var(--backgroundColor);
+    height: 80%;
+    width: 100%;
+}
+
+.textSaida::-webkit-scrollbar {
+    width: 12px;
+}
+
+.textSaida::-webkit-scrollbar-track {
+    background: none; 
+}
+
+.textSaida::-webkit-scrollbar-thumb {
+    background: var(--contentColor);
+    border: 4px solid transparent;
+    border-image: url(img/borderContentColorTextArea.png) 34% round;
+}
+
+.textSaida::-webkit-scrollbar-thumb:hover {
+    background: var(--contentColor); 
+    cursor: pointer;
+}
+
+.botaoEscuro {
+    font-family: inherit;
+    color: var(--backgroundColor);
+    font-size: 20px;
+    font-weight: 400;
+    border: 10px solid transparent;
+    padding: 10px;
+    border-image: url(img/borderContentColorTextArea.png) 34% round;
+    background-color: var(--contentColor);
+}

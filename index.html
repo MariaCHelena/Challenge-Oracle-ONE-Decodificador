@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+    <main>
+        <div class="conteudoInterno"> <!--Fazer a tela interna separando a parte verde escuro da verde claro-->
+            <h1 class="titulo">DECODIFICADOR</h1>
+            <div class="embrulhoDosTextos">
+                <section class="entrada">
+                    <div class="fundo areaDoTextoEntrada">
+                        <textarea class="textEntrada" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="botoes">
+                        <div>
+                            <h6 class="aviso"><span class="iPequeno">!</span> Apenas letras minúsculas e sem acento</h6>
+                        </div>
+                        <div class="divbut">
+                            <button class="encriptar botaoClaro" onclick="BtnEncriptar()">Criptografar</button>
+                            <button class="desencriptar botaoClaro" onclick="BtnDesencriptar()">Descriptografar</button>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="resultado fundo">
+                    <div class="ativado">
+                        <textarea class="textSaida" aria-disabled="false" cols="30" rows="10" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore sit ab unde eaque magni alias est vero veritatis odio, fuga magnam quasi maiores laudantium molestiae sequi facilis dignissimos, minus eos."></textarea>
+                        <button class="copiar botaoEscuro" onclick="copiar()">Copiar</button>
+                    </div>
+                    <div class="desativado">
+                        <img src="img/desenho.png" alt="Desenho de um menino segurando uma lupa" class="desenho">
+                        <h4 class="textoEstatico">Nenhuma mensagem encontrada</h4>
+                        <h6 class="textoEstatico">Digite um texto que você deseja Criptografar ou Descriptografar.</h6>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

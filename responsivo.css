@@ -1,0 +1,91 @@
+@media (max-width: 1200px){
+    main {
+        height: auto;
+        width: 100vw;
+    }
+
+    .conteudoInterno{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 85%;
+        padding: 40px;
+    }
+
+    .titulo{
+        margin-top: 0;
+    }
+
+    .embrulhoDosTextos{
+        flex-direction: column;
+    }
+
+    .resultado {
+        margin-right: 0;
+        margin-bottom: 0;
+        flex-basis: auto;
+    }
+
+    .entrada {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    .textEntrada{
+        height: 300px;
+    }
+
+    .desenho{
+        width: 250px;
+    }
+
+    .ativado{
+        width: 100%;
+    }
+
+    .botoes{
+        align-items: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 850px){
+    .conteudoInterno{
+        width: 75%;
+    }
+}
+
+@media (max-width: 750px){
+    .divbut{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botoes{
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .encriptar{
+        margin: 0 0 0.8em 0;
+    }
+}
+
+@media (max-width: 650px){
+    .titulo{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 560px){
+    .titulo{
+        font-size: 26px;
+    }
+
+    .botaoClaro{
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
