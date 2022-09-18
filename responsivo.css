@@ -78,14 +78,41 @@
 
 @media (max-width: 560px){
     .titulo{
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .botaoClaro{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .desativado h4 {
         font-size: 18px;
     }
 
-    h4 {
+    .desativado h6 {
+        font-size: 14px;
+    }
+
+    .desativado {
+        padding-bottom: 1em;
+    }
+
+    .conteudoInterno{
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .titulo{
         font-size: 18px;
+    }
+
+    .botaoClaro{
+        font-size: 14px;
+    }
+
+    .desenho{
+        width: 200px;
     }
 }
